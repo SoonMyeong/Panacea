@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Panacea</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+	<error-page>
+	   <exception-type>java.lang.Exception</exception-type>
+	   <location>/WEB-INF/views/common/error.jsp</location>
+	</error-page>
+	
+	<error-page>
+	   <exception-type>com.panacea.notice.model.exception.NoticeException</exception-type>
+	   <location>/WEB-INF/views/common/error.jsp</location>
+	</error-page>
+	
+	<error-page>
+	   <exception-type>com.panacea.review.model.exception.ReviewException</exception-type>
+	   <location>/WEB-INF/views/common/error.jsp</location>
+	</error-page>
+	
+	<error-page>
+	   <exception-type>com.panacea.reservation.model.exception.ReservationException</exception-type>
+	   <location>/WEB-INF/views/common/error.jsp</location>
+	</error-page>
+	
+	<error-page>
+	   <exception-type>com.panacea.patient.model.exception.PatientException</exception-type>
+	   <location>/WEB-INF/views/common/error.jsp</location>
+	</error-page>
+	
+	<error-page>
+	   <exception-type>com.panacea.doctor.model.exception.DoctorException</exception-type>
+	   <location>/WEB-INF/views/common/error.jsp</location>
+	</error-page>
+	
+	<error-page>
+	   <exception-type>com.panacea.admin.model.exception.AdminException</exception-type>
+	   <location>/WEB-INF/views/common/error.jsp</location>
+	</error-page>
+	
+	<error-page>
+	   <exception-type>com.panacea.part.model.exception.PartException</exception-type>
+	   <location>/WEB-INF/views/common/error.jsp</location>
+	</error-page>
+</web-app>

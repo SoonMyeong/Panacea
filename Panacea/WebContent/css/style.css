@@ -1,0 +1,1429 @@
+@charset "UTF-8";
+
+/*********************** body 관련  ***************************/
+body{
+	width: 1000px;
+	margin: auto;
+	position: relative;
+}
+*{
+	user-select : none;
+}
+input:focus, select:focus, textarea:focus, button:focus{
+  outline: none;
+}
+span#doctor-name{
+	font-weight: bold;
+	font-size: 0.3em;
+}
+
+/*********************** error 관련  ***************************/
+body#error-body{
+	width: 1000px;
+	text-align: center;
+	font-family: 'Didact Gothic', sans-serif;
+}
+fieldset#error-wrapper{
+	width: 80%;
+	border: 2px dashed #263875;
+	border-radius: 10px;
+	margin: auto;
+	background: #ffffd2;
+}
+fieldset#error-wrapper legend{
+	text-align: center;
+	font-size: 2em;
+}
+fieldset#error-wrapper img{
+	width: 50px;
+}
+P#error-title{
+	color: red;
+	font-weight: bold;
+	font-size: 2em;
+}
+span#e-msg{
+	color: red;
+	font-size: 1.5em;
+}
+
+/*********************** header 관련  ***************************/
+header#header { 
+    width: 100%;
+    position: relative;
+}
+div#title-wrapper{
+	width: 300px;
+	height : 80px;
+	position: relative;
+}
+h1#title{
+	text-align:left;
+	font-size: 50px;
+	margin-left: 100px;
+	font-family: 'Didact Gothic', sans-serif;
+}
+div#title-wrapper a:link, div#title-wrapper a:visited, div#title-wrapper a:hover{
+	text-decoration: none;
+	color: black;
+}
+.logo{
+	position: absolute;
+	left: 10px;
+    width: 60px;
+    height: 60px;
+}
+.logo:hover{
+	animation-name:ani1;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+@keyframes ani1{
+	to{
+		transform: rotate(360deg);     
+	}
+}
+nav#nav-wrapper{
+	width: 100%;
+	height: 60px;
+}
+ul.main-nav {
+   display:table;
+   padding:5px;
+   margin:auto;
+}
+
+ul.main-nav li{
+	font-size: 18px;
+	list-style-type:none;
+	width:8em;
+	height:2em;
+	float:left;
+	text-align:center;
+	font-family: 'Do Hyeon', sans-serif;
+	background-color:white;
+}
+li#partition{
+    border-left:1px #00545e solid;
+}
+ul.main-nav li a:hover {
+    text-decoration:none;
+    color: #00165e;
+    border-bottom: 5px solid #00165e;
+    padding-bottom: 10px;
+}
+
+ul.main-nav li a{
+   display:block;
+   padding:.5em;
+   text-decoration:none;
+   color:#00545e;
+}
+
+/*********************** footer 관련  ***************************/
+footer#footer {
+	width : 100%;
+	height : 68px;
+	background : #e3e3e3;
+	position: relative;
+}
+img.footer-logo{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 30px;
+	height: 30px;
+}
+h3#footer-title{
+	float : left;
+	margin : 10px 0 0 50px;
+	font-family: 'Didact Gothic', sans-serif;
+}
+p#footer-content{
+	float : left;
+	margin : 10px 0 0 60px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+
+/*********************** subnav 관련 ***************************/
+div#subnav-wrapper{
+	position: absolute;
+	margin-top: 20px;
+	padding: 30px 60px 0 20px;
+	width: 150px;
+	min-height: 550px;
+	text-align: left;
+	font-family: 'Do Hyeon', sans-serif;
+}
+span#subnav-title{
+	font-size: 25px;
+	color: #6d6d6d;
+}
+div#sub_menu p{
+	margin: 0;
+	padding: 15px 0 8px 10px;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+	height: 30px;
+}
+div#sub_menu p:first-of-type{
+	margin-top: 20px;
+	border-top: 2px solid #ddd;
+}
+div#sub_menu p:last-of-type{
+	border-bottom: 2px solid #ddd;
+}
+div#sub_menu p a{
+    text-decoration: none;
+    color: #8a8a8a;
+    cursor: pointer;
+}
+div#sub_menu p:hover{
+   	/*  color:#3954ad;  */
+   	/* color: #6e87db; */
+    background-image:url('../img/subnav_back.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+div#sub_menu p:hover a{
+    color:#3954ad;
+    text-decoration:underline;
+}
+
+/*********************** content 관련 ***************************/
+section#content-section{
+	width: 100%;
+	min-height: 550px;
+	position: relative;
+	background: #fbfbfb;
+	padding-bottom: 5px;
+}
+div#content-wrapper{
+	position: relative;
+	padding-top: 30px;
+	left: 220px;
+	/* border: 1px solid black; */
+	width: 76%;
+	min-height: 500px;
+	text-align: center;
+}
+
+/*********************** index 관련 ***************************/
+div#index-img-wrapper{
+    width:100%;
+    position: relative;
+}
+img.mySlides{
+	width: 100%;
+	height: 550px;
+}
+.w3-btn-floating{
+	position: absolute;
+	top: 38%;
+	font-size: 100px;
+	cursor : pointer;
+	color : rgba(184,184,184,0.8);
+	text-decoration : none;
+}
+.w3-btn-floating-r{
+	position: absolute;
+	top: 38%;
+	left: 930px;
+	font-size: 100px;
+	cursor : pointer;
+	color : rgba(184,184,184,0.8);
+}
+
+/*********************** login 관련 ***************************/
+table#login-table{
+	margin: 9% auto 0;
+	width: 200px;
+	font-family: 'Do Hyeon', sans-serif;
+	border-spacing: 10px;
+}
+table#login-table tr:first-of-type td{
+	font-size: 15px;
+	color: #5D5D5D;
+}
+input#userId, input#userPw{
+	border: 1px solid #263875;
+	height: 20px;
+	padding-left: 10px;
+}
+input#saveId+label{
+	font-size: 13px;
+	color: #5D5D5D;
+}
+table#login-table th{
+	text-align: left;
+	font-size: 20px;
+	padding-right: 10px;
+	color: #353535;
+}
+table#login-table td{
+	text-align: center;
+}
+input#loginBtn{
+	width: 100%;
+	height: 30px;
+	background: #263875;
+	border: 1px solid #263875;
+	border-radius: 5px;
+	color: white;
+	font-size: 15px;
+	font-family: 'Do Hyeon', sans-serif;
+	cursor: pointer;
+}
+input#loginBtn:hover{
+	box-shadow: 4px 4px 5px darkgrey;
+}
+button#findId, button#findPw{
+	width: 48%;
+	border: 2px solid #263875;
+	background: #fbfbfb;
+	color: #263875;
+	font-size: 13px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+button#findId:hover, button#findPw:hover{
+	box-shadow: 2px 3px 5px darkgrey;
+}
+
+/*********************** join 관련 ***************************/
+table#join-table{
+	margin: 10px auto;
+	width: 400px;
+	border-top: 2px solid #6e87db;
+	border-bottom: 2px solid #6e87db;
+	border-collapse: collapse;
+	text-align: left;
+}
+table#join-table td{
+	padding: 15px 0 15px 10px;
+}
+table#join-table tr:first-of-type td:last-of-type{
+	border-bottom: 2px solid #6e87db;
+}
+table#join-table td.la{
+	background: #6e87db;
+	border-bottom: 1px solid white;
+	width: 150px;
+	text-align: right;
+	color: white;
+	font-family: 'Do Hyeon', sans-serif;
+	padding-right: 10px;
+	box-sizing: border-box;
+}
+table#join-table td:last-of-type{
+	border-bottom: 1px solid #6e87db;
+}
+div#self-address-input{
+	display: none;
+}
+table#join-table span#id-check{
+	font-size: 13px;
+}
+table#join-table tr:first-of-type span{
+	font-size: 13px;
+	color: red;
+}
+table#join-table tr:last-of-type{
+	text-align: center;
+}
+table#join-table tr:last-of-type input{
+	width: 30%;
+	height: 25px;
+	border: 2px solid #263875;
+	background: #fbfbfb;
+	color: #263875;
+	font-size: 13px;
+	font-family: 'Do Hyeon', sans-serif;
+	cursor: pointer;
+}
+table#join-table tr:last-of-type input:hover{
+	box-shadow: 2px 3px 5px darkgrey;
+}
+input#btn-idValid{
+	width: 60px;
+	background: #263875;
+	border: 1px solid #263875;
+	border-radius: 5px;
+	color: white;
+	font-size: 15px;
+	font-family: 'Do Hyeon', sans-serif;
+	cursor: pointer;
+}
+input#btn-idValid:hover{
+	box-shadow: 2px 3px 5px darkgrey;
+}
+table#join-table input, table#join-table select{
+	width: 100px;
+	border: 1px solid #263875;
+	height: 20px;
+	padding-left: 10px;
+	border-radius: 5px;
+}
+table#join-table input#ssd1, table#join-table input#ssd2{
+	width: 60px;
+}
+table#join-table input#self-address{
+	width: 15px;
+	cursor: pointer;
+}
+table#join-table div#self-address-input, table#join-table div#address{
+	padding-top: 5px;
+}
+table#join-table label#self-address-label{
+	font-size: 14px;
+    display: inline-block;
+    margin-top: -15px;
+    vertical-align: middle;
+}
+
+/*********************** find 관련 ***************************/
+body#popup{
+	width : 480px;
+	height: 300px;
+	text-align: center;
+}
+table#find-table{
+	margin: 5% auto;
+	font-family: 'Do Hyeon', sans-serif;
+	border-spacing: 10px;
+}
+table#find-table th{
+	text-align: left;
+	font-size: 20px;
+	padding-right: 10px;
+	color: #353535;
+}
+table#find-table td{
+	text-align: center;
+	font-size: 15px;
+	color: #5D5D5D;
+}
+table#find-table input#userName, table#find-table input#phone{
+	border: 1px solid #263875;
+	height: 20px;
+	padding-left: 10px;
+}
+table#find-table input#find-submit, input#find-update-submit{
+	margin-top: 20px;
+	width: 60%;
+	height: 30px;
+	border: 2px solid #263875;
+	background: #fbfbfb;
+	color: #263875;
+	font-size: 15px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+table#find-table input#find-submit:hover{
+	box-shadow: 2px 3px 5px darkgrey;
+}
+
+p#find-result{
+	color: darkgray;
+	text-align: center;
+}
+p#find-result span{
+	color: black;
+	font-size: 25px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+input#close-btn{
+	margin: 20px auto;
+	width: 60%;
+	height: 30px;
+	border: 2px solid #263875;
+	background: #fbfbfb;
+	color: #263875;
+	font-size: 15px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+input#close-btn:hover{
+	box-shadow: 2px 3px 5px darkgrey;
+}
+
+/*********************** info 관련 ***************************/
+img#info-img{
+	width: 80%;
+	border-radius: 15px;
+	text-align: center;
+}
+div#info-content{
+	width: 80%;
+	margin: 10px auto 0;
+	padding-top: 10px;
+	border-top: 1px dashed darkgray;
+	text-align: left;
+	font-size: 13px;
+}
+
+img#map{
+	width: 80%;
+	border-radius: 15px;
+	text-align: center;
+}
+div#description{
+	width: 80%;
+	margin: 10px auto 0;
+	padding-top: 10px;
+	border-top: 1px dashed darkgray;
+	text-align: left;
+	font-size: 13px;
+}
+
+/*********************** info > part_doctor 관련 ***************************/
+div.part-wrapper{
+	width: 80px;
+	height: 80px;
+	position: relative;
+	display: inline-block;
+	margin: 20px;
+	cursor: pointer;
+}
+div.part-view{
+	text-align: left;
+	position: relative;
+}
+div.hidden{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding-top: 5%;
+	display: none;
+	background: #4374D9;
+	border-radius: 5px;
+	color: white;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 25px;
+	box-sizing: border-box;
+}
+div#P7 div.hidden, div#P9 div.hidden, div#P10 div.hidden{
+	padding-top: 25%;
+}
+div.part-view img{
+	width: 80px;
+	height: 80px;
+}
+div.part-wrapper:hover div.hidden{
+	display: block;
+}
+h3#part-title, h3#search-title, h3#find-title{
+	font-family: 'Do Hyeon', sans-serif;
+	color: #3954ad;
+	text-align: center;
+}
+hr#part-partition{
+	width: 60%;
+	border: 0.8px dashed #00165e;
+}
+div#doctor-search{
+	width: 60%;
+	margin: 0 auto 20px;
+	padding: 20px 0;
+}
+div#doctor-search input#searchBtn{
+	background: #263875;
+	color: white;
+	font-size: 13px;
+	font-family: 'Do Hyeon', sans-serif;
+	cursor: pointer;
+}
+
+/*********************** info > part_doctor_view & doctor_view 관련 ***************************/
+div#part-introduce p{
+	text-align: left;
+	font-size: 13px;
+}
+div#part-doctors table, table#search-doctors{
+	margin: 10px auto 0;
+}
+div#part-doctors table td, table#search-doctors td{
+	padding: 0 10px;
+	width: 200px;
+	height: 350px;
+	position: relative;
+}
+div.part-doctor-introduce{
+	text-align: left;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 5%;
+}
+div.part-doctor-introduce p{
+	font-size: 13px;
+	width: 180px;
+}
+span#part-name{
+	color: darkgray;
+	font-size: 16px;
+	font-weight: bold;
+}
+span#doctor-name{
+	font-size: 20px;
+	font-weight: bold;
+}
+img#profile{
+	width: 200px;
+	height: 200px;
+	display: block;
+}
+div.part-doctor-introduce input#reservation-btn{
+	width: 85%;
+	height: 30px;
+	background: #a0ceee;
+	color: #263875;
+	font-size: 15px;
+	font-family: 'Do Hyeon', sans-serif;
+	cursor: pointer;
+	position: absolute;
+	top: 300px;
+}
+div.part-doctor-introduce input#reservation-btn:hover{
+	border: 1px solid #263875;
+	box-shadow: 2px 3px 5px darkgrey;
+}
+
+/*********************** reservation 관련 ***************************/
+div.stepmenu{
+	display: inline-block;
+	width: 32%;
+	height: 50px;
+	padding-top: 1.5%;
+	box-sizing: border-box;
+	margin-top: 20px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+div#reservation-content{
+	width: 97.2%;
+	height: 400px;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+	margin: auto;
+	text-align: left;
+	position: relative;
+}
+div#reservation-form{
+	width: 29%;
+	padding-top: 20px;
+	box-sizing: border-box;
+    font-family: 'Do Hyeon', sans-serif;
+    color: #3954ad;
+    font-size: 18px;
+    position: relative;
+    left: 40px;
+    top: 20px;
+}
+div#reservation-description{
+	width: 65%;
+	height: 85%;
+	padding: 0 15px 15px;
+	font-size: 13px;
+	box-sizing: border-box;
+	position: relative;
+	left: 240px;
+	top: -30%;
+	border: 2px solid #3954ad;
+	border-radius: 10px;
+	overflow-y: scroll;
+}
+select#selectedPart, input#submit-step1{
+	width: 180px;
+	height: 30px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+input#submit-step1{
+	margin-top: 5px;
+	background: #263875;
+	border: 1px solid #6480db;
+	color: white;
+	font-size: 15px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+input#submit-step1:hover{
+	border: 1px solid #263875;
+	box-shadow: 2px 3px 5px darkgrey;
+}
+div.reservation-btn{
+	position: absolute;
+	top: 85%;
+	width:100%;
+	text-align: left;
+}
+div.reservation-btn input{
+	width: 85%;
+	cursor: pointer;
+	height: 30px;
+	background: #a0ceee;
+	color: #263875;
+	font-size: 15px;
+	font-family: 'Do Hyeon', sans-serif;
+	cursor: pointer;
+}
+div.reservation-btn input:hover{
+	border: 1px solid #263875;
+	box-shadow: 2px 3px 5px darkgrey;
+}
+}
+div#reservation-content h3#part-title{
+	text-align: center;
+}
+div#reservation-doctors{
+	overflow-y: scroll;
+	height: 75%;
+}
+div#reservation-doctors table{
+	margin: 10px auto;
+}
+div#reservation-doctors table td{
+	padding: 0 10px;
+	width: 200px;
+	height: 350px;
+	position: relative;
+}
+div#select-date-time, div#reservation-result{
+	display: inline-block;
+	width: 40%;
+	height: 70%;
+}
+div#select-date-time{
+	margin: 5% 0 0 5%;
+}
+div#select-date-time h3#date-time-title{
+	text-align: left;
+	font-family: 'Do Hyeon', sans-serif;
+	color: #3954ad;
+}
+span#reservation-notice{
+	color: red;
+	font-size: 10px;
+}
+div#select-date-time input, div#select-date-time select{
+	width: 160px;
+	height: 25px;
+	border-radius: 5px;
+	border: 1px solid #263875;
+}
+div#reservation-result{
+	position: absolute;
+	margin: 8% 0 0 5%;
+	border: 2px solid #3954ad;
+	border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+div#reservation-result h3#result-title{
+	text-align: center;
+	font-family: 'Do Hyeon', sans-serif;
+	color: #3954ad;
+}
+div#reservation-result span#part-result{
+	color: darkgray;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 30px;
+}
+div#reservation-result span#doctor-result, div#reservation-result span#date-time-result{
+	font-size: 22px;
+	font-weight: bold;
+	padding-left: 30px;
+}
+input#final-reservation-btn {
+	margin: 20px 0 0 50px;
+	width: 65%;
+	height: 35px;
+	background: #263875;
+	color: white;
+	font-size: 15px;
+	font-family: 'Do Hyeon', sans-serif;
+	cursor: pointer;
+	border: 1px solid #263875;
+	border-radius: 5px;
+}
+input#final-reservation-btn:hover{
+	box-shadow: 4px 4px 5px darkgrey;
+}
+
+/*********************** review_subnav 관련 ***************************/
+section#srch-container{
+	margin-top: 10px;
+}
+span#search-review-title{
+	color: darkgray;
+	display: block;
+    margin: 10px 0 10px 5px;
+}
+form[name=srchFrm]{
+	margin: 5px;
+}
+img.star{
+	width : 15px;
+	height : 15px;
+}
+#srchKey{
+	color: #6d6d6d;
+}
+#srchDate{
+	color: #6d6d6d;
+}
+input.srchType{
+	margin: 0 -5px 0 2px;
+	cursor: pointer;
+}
+label.srchType{
+	color: #6d6d6d;
+    font-size: 15px;
+}
+input#srchKeyword{
+    width: 100%;
+    height: 25px;
+    padding-left: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+form[name=srchFrm] input[type=submit]{
+    width: 100%;
+    border-radius: 5px;
+    background: #e8e8e8;
+    border: 1px solid gray;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+form[name=srchFrm] input[type=submit]:hover{
+	box-shadow: 3px 3px 4px darkgray;
+}
+
+/*********************** review_pagingbar 관련 ***************************/
+.pagination { 
+	margin-top : 20px;
+	margin-left : 30%;
+	min-width : 400px;
+	position : relative;
+	display : inline-block;
+	text-align : center;
+     margin-bottom: 10px;
+}
+.pagination a{
+	display : inline-block;
+    color: gray;
+    float: left;
+    margin-left : 1px;
+    margin-right : 1px;
+    padding: 8px 16px;
+    text-decoration: none;
+    border : 1px solid #ccc;
+    border-radius : 10px;
+    width : 45px;
+    box-sizing : border-box;
+}
+.pagination span{
+	display : inline-block;
+	color: white;
+	font-weight : bold;
+	margin-left: 10px;
+	margin-right : 10px;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    background : lightblue;
+    border-radius : 10px;
+    width : 45px;
+    box-sizing : border-box;
+}
+div.pagination a:hover:not(.active) {
+	background-color: #ddd;
+	color : black;
+	cursor: pointer;
+}
+
+/*********************** review_list 관련 ***************************/
+div#mypage-wrapper h2, div#container-reviewList h2, div#review-container h2, div#notice-container h2{
+	font-family: 'Do Hyeon', sans-serif;
+	color: #3954ad;
+}
+div#container-reviewList table#tbl-review, table#tbl-review-form{
+	margin: 10px auto;
+	border-spacing: 5px;
+	width: 80%;
+	border-top: 2px dashed #3954ad;
+	border-bottom: 2px dashed #3954ad;
+	border-collapse: collapse;
+}
+table#tbl-review th, table#tbl-review td, table#tbl-review-form th, table#tbl-review-form td{
+	border-bottom: 1px solid #3954ad;
+	padding: 10px 10px;
+} 
+table#tbl-review tr:first-of-type th{
+	border-bottom: 2px dashed #3954ad;
+	font-size: 16px;
+    font-weight: lighter;
+	font-family: 'Do Hyeon', sans-serif;	
+}
+table#tbl-review td:first-of-type{
+	padding-left: 10px;
+	text-align: left;
+	width: 200px;
+	overflow : hidden;
+	max-width: 190px;
+    text-overflow: ellipsis;
+    height: 30px;
+   	white-space:nowrap;
+}
+table#tbl-review td:last-of-type{
+	font-size: 13px;
+}
+table#tbl-review td a{
+	text-decoration: none;
+	color: black;
+}
+table#tbl-review td.none{
+	text-align: center;
+	font-size: 13px;
+	color: red;
+}
+div#container-reviewList input#del-btn{
+    margin-left: -74%;
+    color: white;
+	font-family: 'Do Hyeon', sans-serif;
+	background: #263875;
+}
+table#tbl-review tr#hover:hover{
+	background: #def2ff;
+	color: navy;
+	cursor: pointer;
+}
+
+/*********************** review_view 관련 ***************************/
+table#tbl-review-one{
+	margin: 10px auto;
+	border-spacing: 5px;
+	width: 80%;
+	border-top: 2px dashed #3954ad;
+	border-bottom: 2px dashed #3954ad;
+	border-collapse: collapse;
+}
+table#tbl-review-one td{
+	border-bottom: 1px solid #3954ad;
+	padding: 10px 25px;
+	text-align: left;
+}
+table#tbl-review-one td:first-of-type{
+	text-align: center;
+	width: 130px;
+	border-right: 2px dashed #3954ad;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 18px;
+}
+p#comment-title{
+	color: #808080;
+	font-family: 'Do Hyeon', sans-serif;
+    margin: 40px 0 10px 10px;
+}
+div#comment-contariner{
+	width: 80%;
+	text-align: left;
+	margin: auto;
+}
+div#comment-contariner textarea{
+	width: 88%;
+}
+div#comment-contariner button#btn-insert{
+	width : 60px;
+	height : 50px;
+	color : white;
+	background : #3954ad;
+	position : relative;
+	top : -20px;
+	font-size: 18px;
+	font-weight: lighter;
+	font-family: 'Do Hyeon', sans-serif;
+}
+table#tbl-comment{
+	width : 100%;
+	margin : 0 auto;
+	border-top: 1px solid #3954ad;
+	border-bottom: 1px solid #3954ad;
+	border-collapse:collapse;
+	font-weight : bolder;
+}
+table#tbl-comment tr td{
+	border-bottom : 1px solid #3954ad;
+	padding : 5px;
+	text-align : left;
+	line-height : 120%;
+}
+table#tbl-comment tr td:first-of-type, table#tbl-mostLikeComment tr td:first-of-type{
+	padding : 5px 5px 5px 20px;
+    width: 265px;
+    box-sizing: border-box;
+}
+table#tbl-comment tr td:last-of-type, table#tbl-mostLikeComment tr td:last-of-type{
+	text-align:right;
+	width: 100px;
+}
+table#tbl-comment button.btn-reply, table#tbl-mostLikeComment button.btn-reply{
+	background: #3954ad;
+	color: white;
+	border: 1px solid #3954ad;
+	border-radius: 3px;
+	display: none;
+	cursor: pointer;
+}
+table#tbl-comment tr:hover, table#tbl-mostLikeComment tr:hover{
+	background:#e3e3e3;
+}
+table#tbl-comment tr:hover button.btn-reply, table#tbl-mostLikeComment tr:hover button.btn-reply{
+	display : inline;
+}
+table#tbl-comment sub.comment-writer, table#tbl-mostLikeComment sub.comment-writer{
+	font-size : 12px;
+	color : navy;
+}
+table#tbl-comment sub.comment-date, table#tbl-mostLikeComment sub.comment-date{
+	font-size : 12px;
+	color : tomato;
+}
+table#tbl-comment tr.level2 td:first-of-type{
+	padding-left: 50px;
+}
+table#tbl-comment button.btn-delete, table#tbl-mostLikeComment button.btn-delete{
+	background : red;
+	color : white;
+	display : none;
+	border: 1px solid red;
+	border-radius: 3px;
+	cursor: pointer;
+}
+table#tbl-comment tr:hover button.btn-delete, table#tbl-mostLikeComment tr:hover button.btn-delete{
+	display: inline;
+}
+table#tbl-mostLikeComment{
+	width : 100%;
+	height : 50px;
+	margin : 0 auto;
+	border-collapse : collapse;
+	font-weight: bolder;
+	background : #def2ff;
+}
+table#tbl-mostLikeComment tr td{
+	border-bottom : 2px dashed #4374d9;
+	border-top : 2px dashed #4374d9;
+	padding : 5px;
+	text-align : left;
+	line-height : 120%;
+}
+button.btn-likeIt{
+	background : #ffd600;
+	color : navy;
+	border: 1px solid #ffd600;
+	border-radius: 3px;
+	cursor: pointer;
+    margin-right: 10px;
+}
+button.btn-Bad{
+	background : #00545e;
+	color : white;
+	border: 1px solid #00545e;
+	border-radius: 3px;
+	cursor: pointer;
+    margin-right: 10px;
+}
+
+/*********************** review_form 관련 ***************************/
+table#tbl-review-form th{
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 18px;
+	font-weight: lighter;
+	border-right: 2px dashed #3954ad;
+}
+table#tbl-review-form td{
+	text-align: left;
+}
+table#tbl-review-form tr:last-of-type th{
+	border: 0;
+	border-top: 2px dashed #3954ad;
+}
+table#tbl-review-form td input, table#tbl-review-form td select{
+	border: 1px solid #263875;
+	border-radius: 3px;
+	height: 30px;
+	padding-left: 10px;
+}
+table#tbl-review-form textarea{
+	border: 1px solid #263875;
+	border-radius: 3px;
+	padding: 10px;
+}
+table#tbl-review-form tr:last-of-type th input{
+	width: 300px;
+	height: 30px;
+	background: #263875;
+	border: 1px solid #263875;
+	border-radius: 5px;
+	color: white;
+	font-size: 15px;
+	font-family: 'Do Hyeon', sans-serif;
+	cursor: pointer;
+}
+table#tbl-review-form tr:last-of-type th input:hover{
+	box-shadow: 4px 4px 5px darkgrey;
+}
+
+/*********************** notice_search 관련 ***************************/
+select#searchType{
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+}
+div#search-notice_Title{
+	display: none;
+}
+div#search-admin_Id{
+	display:inline-block;
+}
+div#search-container input{
+	width: 185px;
+	height: 30px;
+	border-radius: 5px;
+	margin: 5px 0;
+	border: 1px solid darkgray;
+}
+div#search-container button{    
+	width: 100%;
+    border-radius: 5px;
+    background: #e8e8e8;
+    border: 1px solid gray;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+div#search-container button:hover{
+	box-shadow: 3px 3px 4px darkgray;
+}
+
+/*********************** notice_table 관련 ***************************/
+div#notice-container{
+	width:100%;
+	margin:0 auto; 
+	text-align:center;
+}
+table#tbl-notice{
+	margin: 10px auto;
+	border-spacing: 5px;
+	width: 80%;
+	border-top: 2px dashed #3954ad;
+	border-bottom: 2px dashed #3954ad;
+	border-collapse: collapse;
+}
+table#tbl-notice th{
+	border-bottom: 2px dashed #3954ad;
+	font-size: 16px;
+    font-weight: lighter;
+	font-family: 'Do Hyeon', sans-serif;
+	padding: 10px 5px;
+}
+table#tbl-notice td{
+	border-bottom: 1px solid #3954ad;
+	padding: 10px 10px;
+} 
+.center{
+	width:70px;
+	text-align:center;
+}
+
+.title{
+	max-width:270px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+td.title a{
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+.writer{
+	width:100px;
+}
+.file{
+	width:100px;
+}
+td.date{
+	width:100px;
+	font-size: 13px;
+}
+.imgs{
+	height: 15px;
+}
+input#btn-add{
+    margin-left: -1%;
+    color: white;
+	font-family: 'Do Hyeon', sans-serif;
+	background: #263875;
+}
+input#btn-delete{
+    margin-left: -77%;
+    color: white;
+	font-family: 'Do Hyeon', sans-serif;
+	background: #263875;
+}
+
+/*********************** notice_form 관련 ***************************/
+table#tbl-notice-form{
+	margin: 10px auto;
+	border-spacing: 5px;
+	width: 70%;
+	border-top: 2px dashed #3954ad;
+	border-bottom: 2px dashed #3954ad;
+	border-collapse: collapse;
+	box-sizing: border-box;
+}
+table#tbl-notice-form th{
+	width: 180px;
+	border-right: 2px dashed #3954ad;
+	font-size: 16px;
+    font-weight: lighter;
+	font-family: 'Do Hyeon', sans-serif;
+}
+table#tbl-notice-form th, table#tbl-notice-form td{
+	border-bottom: 1px solid #3954ad;
+	padding: 10px 10px;
+}
+table#tbl-notice-form td{
+	text-align: left;
+	font-size: 13px;
+	padding-left: 20px;
+}
+table#tbl-notice-form td input{
+	border-radius: 3px;
+	padding-left: 10px;
+	border: 1px solid #263875;
+	height: 20px;
+}
+table#tbl-notice-form textarea{
+	border: 1px solid #263875;
+	border-radius: 3px;
+	padding: 10px;
+}
+table#tbl-notice-form td#file input{
+	border: 0;
+}
+table#tbl-notice-form tr:last-of-type th{
+	border-right: 0;
+	border-top: 2px dashed #3954ad;
+}
+table#tbl-notice-form th input{
+	width: 300px;
+	height: 30px;
+	background: #263875;
+	border: 1px solid #263875;
+	border-radius: 5px;
+	color: white;
+	font-size: 15px;
+	font-family: 'Do Hyeon', sans-serif;
+	cursor: pointer;
+}
+table#tbl-notice-form th input:hover{
+	box-shadow: 4px 4px 5px darkgrey;
+}
+
+/*********************** notice_view 관련 ***************************/
+table#tbl-notice-one{
+	margin: 10px auto;
+	border-spacing: 5px;
+	width: 70%;
+	border-top: 2px dashed #3954ad;
+	border-bottom: 2px dashed #3954ad;
+	border-collapse: collapse;
+	box-sizing: border-box;
+}
+table#tbl-notice-one th{
+	width: 180px;
+	border-right: 2px dashed #3954ad;
+	font-size: 20px;
+    font-weight: lighter;
+	font-family: 'Do Hyeon', sans-serif;
+}
+table#tbl-notice-one th, table#tbl-notice-one td{
+	border-bottom: 1px solid #3954ad;
+	padding: 10px 10px;
+}
+table#tbl-notice-one td{
+	text-align: left;
+	font-size: 15px;
+	padding-left: 20px;
+}
+table#tbl-notice-one th.content{
+	border-right: 0;
+}
+table#tbl-notice-one th.content div{
+	min-height: 300px;
+}
+table#tbl-notice-one td input{
+	width: 300px;
+	height: 30px;
+	background: #263875;
+	border: 1px solid #263875;
+	border-radius: 5px;
+	color: white;
+	font-size: 15px;
+	font-family: 'Do Hyeon', sans-serif;
+	cursor: pointer;
+}
+table#tbl-notice-one td input:hover{
+	box-shadow: 4px 4px 5px darkgrey;
+}
+
+/*********************** mypage_update 관련 ***************************/
+table#tbl-update{
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    border-spacing: 30px;
+  	margin: 50px auto 0;
+  	width: 80%;
+}
+table#tbl-update h3{	
+	font-family: 'Do Hyeon', sans-serif;
+	color: #3954ad;
+	margin: 0 0 20px;
+}
+table#tbl-update td input, table#tbl-update td select{
+	border: 1px solid #263875;
+	border-radius: 3px;
+	padding-left: 10px;
+	height: 20px;
+}
+table#tbl-update td textarea{
+	border: 1px solid #263875;
+	border-radius: 3px;
+	padding: 10px;	
+}
+table#tbl-update input#disease-name, table#tbl-update textarea#disease-comment{
+	width:250px;
+}
+table#tbl-update td:first-of-type{
+	text-align: right;
+	width: 220px;
+	font-size: 17px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+table#tbl-update td:last-of-type{
+	text-align: left;
+}
+table#tbl-update tr:first-of-type td{
+	border-bottom: 2px dashed gray;
+	text-align: center;
+}
+table#tbl-update tr:last-of-type td{
+	border-top: 2px dashed gray;
+	padding-top: 20px;
+	text-align: center;
+}
+table#tbl-update tr:last-of-type input{
+	width: 100px;
+	height: 30px;
+	background: #263875;
+	border: 1px solid #263875;
+	color: white;
+	font-size: 16px;
+	font-family: 'Do Hyeon', sans-serif;
+	border-radius: 5px;
+	cursor: pointer;
+}
+table#tbl-update tr:last-of-type input:hover{
+	box-shadow: 4px 4px 5px darkgrey;
+}
+table#tbl-update span#fname{
+    position: absolute;
+    left: 90px;
+    top: 2px;
+    width: 99px;
+    background: #fbfbfb;
+    font-size: 15px;
+}
+
+/*********************** mypage_updatePW 관련 ***************************/
+body#updatePw{
+	width: 350px;
+	height: 180px;
+}
+div#updatePW-container{
+	width: 100%;
+	height: 100%;
+	margin: 10px auto;
+	border-top: 2px solid #3954ad;
+	border-bottom: 2px solid #3954ad;
+	text-align: center;
+	padding: 20px 0;
+	box-sizing: border-box;
+}
+div#updatePW-container input#btn-submit{
+	margin-top: 30px;
+	width: 100px;
+	height: 30px;
+	background: #263875;
+	border: 1px solid #263875;
+	color: white;
+	font-size: 16px;
+	font-family: 'Do Hyeon', sans-serif;
+	border-radius: 5px;
+	cursor: pointer;
+}
+div#updatePW-container input#btn-submit:hover{
+	box-shadow: 4px 4px 5px darkgrey;
+}
+
+/*********************** mypage_list 관련 ***************************/
+div#mypage-wrapper input#admin-btn{
+	background: #263875;
+	border: 1px solid #263875;
+	color: white;
+	font-size: 16px;
+	font-family: 'Do Hyeon', sans-serif;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+div#mypage-wrapper div#doctorPageBar{
+	margin-left: 10%;
+}
+table#tbl-mypageList{
+	margin: 0 auto;
+	border-collapse: collapse;
+	border-top: 2px solid #3954ad;
+	border-bottom: 2px solid #3954ad;
+	width: 80%;
+}
+table#tbl-mypageList th{
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 18px;
+	height: 40px;
+}
+table#tbl-mypageList th, table#tbl-mypageList td{
+	border-bottom: 1px dotted #3954ad;
+	height: 30px;
+}
+table#tbl-mypageList tr:hover{
+	cursor: pointer;
+	background: #def2ff;
+}
+table#tbl-mypageList tr:first-of-type:hover{
+	cursor:auto;
+	background: none;
+}
+table#tbl-mypageList td{
+	text-align: center;
+}
+table#tbl-mypageList td.none{
+	text-align: center;
+	font-size: 13px;
+	color: red;
+}
